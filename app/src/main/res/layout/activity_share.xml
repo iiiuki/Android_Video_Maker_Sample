@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/llActionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_square"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_left_5dp"
+        android:paddingLeft="@dimen/padding_left_10dp"
+        android:paddingRight="@dimen/padding_left_10dp"
+        android:paddingTop="@dimen/padding_left_5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llBackMain"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/btnBackMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_back_main" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_left_10dp"
+            android:layout_toRightOf="@+id/llBackMain"
+            android:gravity="center_vertical"
+            android:text="Photo Saved"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/txt_normal" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvFilpathSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llActionbar"
+        android:text="@string/app_file_path"
+        android:textColor="@color/app_black"
+        android:textSize="@dimen/txt_mall" />
+
+    <LinearLayout
+        android:id="@+id/llShare"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvFilpathSave"
+        android:layout_marginTop="@dimen/padding_left_5dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/main_width"
+            android:background="@color/app_tranparent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/buttonFace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_left_5dp"
+            android:padding="@dimen/padding_left_10dp"
+            android:layout_weight="1"
+            android:text="Facebook"
+            android:textColor="@color/app_black"
+            android:gravity="center"
+            android:textSize="@dimen/txt_mall"
+            android:drawableTop="@mipmap/share_face" />
+        <ImageView
+            android:layout_width="@dimen/main_width"
+            android:background="@color/app_tranparent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/buttonInsta"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_left_10dp"
+            android:drawablePadding="@dimen/padding_left_5dp"
+            android:text="Instagram"
+            android:textColor="@color/app_black"
+            android:gravity="center"
+            android:textSize="@dimen/txt_mall"
+            android:drawableTop="@mipmap/share_insta" />
+        <ImageView
+            android:layout_width="@dimen/main_width"
+            android:background="@color/app_tranparent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/buttonMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_left_10dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/padding_left_5dp"
+            android:text="More"
+            android:textColor="@color/app_black"
+            android:gravity="center"
+            android:textSize="@dimen/txt_mall"
+            android:drawableTop="@mipmap/share_more" />
+
+        <ImageView
+            android:layout_width="@dimen/main_width"
+            android:background="@color/app_tranparent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBanner"
+        android:layout_below="@+id/llShare"
+        android:layout_centerInParent="true"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/llBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_black"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

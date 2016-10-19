@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gallery_ok_button_normal">#ffef695a</color>
+    <color name="gallery_ok_button_pressed">#ffed7c70</color>
+    <color name="gallery_header_color">#ffec4f4f</color>
+    <color name="gallery_grid_item_text_color">#ff7b7a7a</color>
+    <color name="gallery_count_color">#ff13cd61</color>
+    <color name="collage_purple_pressed">#ffa826b0</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="trgb_80afdb">#80afdb</color>
+    <color name="trgb_ffcccccc">#ffcccccc</color>
+    <color name="trgb_5483af">#5483af</color>
+    <color name="trgb_00000000">#00000000</color>
+    <color name="lighter_gray">#00000000</color>
+    <color name="trgb_c0e9ff">#c0e9ff</color>
+    <color name="trgb_ffffffff">#ffffffff</color>
+    <color name="trgb_ff000000">#ff000000</color>
+    <color name="trgb_90000000">#90000000</color>
+
+    <color name="paint_color_1">#850000</color>
+    <color name="paint_color_2">#ff0000</color>
+    <color name="paint_color_3">#ff6100</color>
+    <color name="paint_color_4">#ffc600</color>
+    <color name="paint_color_5">#5bc600</color>
+    <color name="paint_color_6">#008400</color>
+    <color name="paint_color_7">#000000</color>
+    <color name="paint_color_8">#898989</color>
+    <color name="paint_color_9">#00eeae</color>
+    <color name="paint_color_10">#b400ff</color>
+    <color name="paint_color_11">#0044ff</color>
+    <color name="paint_color_12">#0090ff</color>
+    <array name="paint_colors">
+        <item>@color/paint_color_1</item>
+        <item>@color/paint_color_2</item>
+        <item>@color/paint_color_3</item>
+        <item>@color/paint_color_4</item>
+        <item>@color/paint_color_5</item>
+        <item>@color/paint_color_6</item>
+        <item>@color/paint_color_7</item>
+        <item>@color/paint_color_8</item>
+        <item>@color/paint_color_9</item>
+        <item>@color/paint_color_10</item>
+        <item>@color/paint_color_11</item>
+        <item>@color/paint_color_12</item>
+    </array>
+
+    <color name="app_cut">#990033</color>
+
+    <color name="primary">#212121</color>
+    <color name="primary_dark">#151515</color>
+    <color name="accent">#FF4081</color>
+
+    <color name="app_bg">#1a1a1c</color>
+    <color name="app_main">#40000000</color>
+    <color name="app_main_bg">#e9e1e0</color>
+    <color name="app_tranparent">#00000000</color>
+
+    <color name="app_black_tranfaren">#00000000</color>
+    <color name="app_black_80">#80000000</color>
+
+    <color name="app_white_tranfaren">#00ffffff</color>
+    <color name="app_white_30">#30ffffff</color>
+    <color name="app_white_80">#80ffffff</color>
+
+    <color name="app_white">#fff</color>
+    <color name="app_black">#000</color>
+    <color name="app_gray">#8c8c8c</color>
+    <color name="app_gray_80">#808c8c8c</color>
+    <color name="app_orange">#e37600</color>
+    <color name="app_rate">#9cbe31</color>
+    <color name="app_insta">#ff6073</color>
+    <color name="app_blue">#019cff</color>
+    <color name="app_gallery">#b27ff4</color>
+    <color name="app_cam">#ff6073</color>
+    <color name="app_face">#3d66a7</color>
+    <color name="app_square">#111111</color>
+    <color name="trgb_262626">#262626</color>
+    <color name="app_backfround">#424242</color>
+    <color name="collage_purple">#ffbf46d3</color>
+</resources>

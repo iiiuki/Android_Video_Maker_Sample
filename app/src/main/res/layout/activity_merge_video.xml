@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_backfround">
+
+    <RelativeLayout
+        android:id="@+id/layout_actionbar_merge"
+        android:layout_width="match_parent"
+        android:background="@color/app_square"
+        android:layout_height="54dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="140dp"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Chỉnh Video"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_merge_video"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@color/app_tranparent"
+            android:text="Marge"
+            android:textSize="13sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_actionbar_merge"
+        android:fillViewport="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <com.hiep.video.maker.widget.SquareRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <SurfaceView
+                android:id="@+id/surface_view_merge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_above="@+id/layout_seekto_merge"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/play_status_merge"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/play_big"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_seekto_merge"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="7dp"
+                android:background="#CC171B1D"
+                android:paddingRight="7dp"
+                android:layout_height="70dp">
+                <LinearLayout
+                    android:weightSum="10"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_height="30dp">
+                    <ImageView
+                        android:id="@+id/ivFrame00"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame01"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame02"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame03"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame04"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame05"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame06"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame07"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame08"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/ivFrame09"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <ViewFlipper
+                    android:id="@+id/vp_list_ranger_merge"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_height="match_parent">
+                </ViewFlipper>
+            </RelativeLayout>
+        </com.hiep.video.maker.widget.SquareRelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_square">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_merge"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

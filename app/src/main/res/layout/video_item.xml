@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hiep.video.maker.widget.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_item_my_video_cover"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_bg"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_audio_details_play"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_height="@dimen/actionbar_50">
+            <TextView
+                android:id="@+id/tv_item_my_video_name"
+                android:layout_width="0dp"
+                android:gravity="center|left"
+                android:layout_weight="0.7"
+                android:textSize="@dimen/text_size_13"
+                android:text="AAAAAAAAAAAAAAAA"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_item_my_video_duration"
+                android:layout_width="0dp"
+                android:gravity="center|right"
+                android:layout_weight="0.3"
+                android:text="00:00"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.hiep.video.maker.widget.SquareRelativeLayout>
+</LinearLayout>

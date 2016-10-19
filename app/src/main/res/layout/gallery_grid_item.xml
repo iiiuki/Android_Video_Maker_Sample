@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gllery_grid_item_layout_size"
+    android:layout_height="@dimen/gllery_grid_item_layout_size"
+    android:padding="@dimen/gllery_grid_item_layout_padding">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/gllery_grid_item_image_size"
+        android:layout_height="@dimen/gllery_grid_item_image_size"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/grid_item_text_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView"
+        android:alpha="0.6"
+        android:background="#ffffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_path"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="2.0"
+            android:singleLine="true"
+            android:textColor="@color/gallery_grid_item_text_color"
+            android:textSize="@dimen/gallery_grid_item_path_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gallery_grid_item_text_color"
+            android:textSize="@dimen/gallery_grid_item_path_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSelectedItemCount"
+        android:layout_width="@dimen/gallery_grid_item_selected_item_size"
+        android:layout_height="@dimen/gallery_grid_item_selected_item_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:background="@color/collage_purple"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/gallery_grid_item_selected_item_text_size"
+        android:textStyle="bold"
+        android:visibility="visible" />
+</RelativeLayout>

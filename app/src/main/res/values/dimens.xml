@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <!-- Gallery -->
+    <dimen name="gallery_footer_item_layout_size">150.0dip</dimen>
+    <dimen name="gallery_footer_item_layout_padding">5.0dip</dimen>
+    <dimen name="gallery_footer_delete_image_size">30.0dip</dimen>
+    <dimen name="gallery_footer_image_size">80.0dip</dimen>
+    <dimen name="gllery_grid_item_layout_size">120.0dip</dimen>
+    <dimen name="gllery_grid_item_layout_padding">5.0dip</dimen>
+    <dimen name="gllery_grid_item_image_size">120.0dip</dimen>
+    <dimen name="gallery_grid_item_path_text_size">13.0sp</dimen>
+    <dimen name="gallery_grid_item_selected_item_text_size">15.0sp</dimen>
+    <dimen name="gallery_grid_item_selected_item_size">30.0dip</dimen>
+    <dimen name="gallery_main_layout_header_padding">10.0dip</dimen>
+    <dimen name="gallery_main_layout_header_text_size">24.0sp</dimen>
+    <dimen name="gallery_footer_count_button_width">50.0dip</dimen>
+    <dimen name="gallery_footer_count_button_padding">10.0dip</dimen>
+    <dimen name="gallery_footer_count_button_text_size">20.0sp</dimen>
+    ////////////
+    <dimen name="actionbar_50">50dp</dimen>
+    <dimen name="height_video">250dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+    <dimen name="edit_activity_view_width">8.0dip</dimen>
+    <dimen name="edit_activity_view_height">5.0dip</dimen>
+    <dimen name="sticker_indicator_padding">5.0dp</dimen>
+    <dimen name="sticker_store_btn_width_height">50dp</dimen>
+    <dimen name="sticker_icon_width">61dp</dimen>
+    <dimen name="sticker_icon_height">50dp</dimen>
+    <dimen name="sticker_viewpager_right">5dp</dimen>
+    <dimen name="sticker_gridview_spacing">10dp</dimen>
+    <dimen name="menu_edit_bottom_width">50dp</dimen>
+    <dimen name="comment_icon_width_and_height">100dp</dimen>
+    <dimen name="comment_icon_margin_layout">3dp</dimen>
+
+    <dimen name="padding_left_10dp">10dp</dimen>
+    <dimen name="padding_left_3dp">3dp</dimen>
+    <dimen name="padding_left_5dp">5dp</dimen>
+    <dimen name="padding_left_20dp">20dp</dimen>
+    <dimen name="padding_left_30dp">30dp</dimen>
+    <dimen name="padding_3dp">3dp</dimen>
+    <dimen name="main_width">20dp</dimen>
+    <dimen name="height_50dp">50dp</dimen>
+    <dimen name="height_60dp">60dp</dimen>
+    <dimen name="height_30dp">30dp</dimen>
+    <dimen name="height_75dp">75dp</dimen>
+    <dimen name="txt_mall">14sp</dimen>
+    <dimen name="txt_normal">17sp</dimen>
+    <dimen name="txt_lenght">21sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="height_skee_merge_video">30dp</dimen>
+</resources>

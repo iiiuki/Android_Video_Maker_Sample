@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="200dp"
+        android:text="Chọn ảnh"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btn_my_video"
+        android:layout_width="200dp"
+        android:layout_below="@+id/btn_select_image"
+        android:text="My Video"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_merge_video"
+        android:layout_width="200dp"
+        android:layout_below="@+id/btn_my_video"
+        android:text="Merge Video"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_add_gif"
+        android:layout_width="200dp"
+        android:layout_below="@+id/btn_merge_video"
+        android:text="Add Gif"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_add_sticker"
+        android:layout_width="200dp"
+        android:layout_below="@+id/btn_add_gif"
+        android:text="Add STICKER"
+        android:layout_height="50dp" />
+
+    <FrameLayout
+        android:id="@+id/fl_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</RelativeLayout>

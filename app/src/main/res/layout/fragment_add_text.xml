@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/trgb_262626"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_cancel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/padding_left_5dp"
+                android:src="@mipmap/ic_cancel"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/iv_cancel_text"
+                android:layout_toLeftOf="@+id/iv_done_text"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/ed_add_text"
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dp"
+                    android:hint="Your text"
+                    android:textColor="@color/app_white"
+                    android:textColorHint="@color/app_white"
+                    android:gravity="center"
+                    android:textSize="@dimen/txt_normal"
+                    android:layout_height="@dimen/height_50dp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_done_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/padding_left_5dp"
+                android:src="@mipmap/ic_done"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/app_white"
+        android:layout_marginBottom="@dimen/padding_left_5dp"
+        android:layout_marginTop="@dimen/padding_left_5dp"
+        android:layout_height="1px" />
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView_color"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        android:scrollbars="horizontal"
+        android:layout_height="@dimen/height_50dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/app_white"
+        android:layout_marginBottom="@dimen/padding_left_5dp"
+        android:layout_marginTop="@dimen/padding_left_5dp"
+        android:layout_height="1px" />
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerView_font"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        android:scrollbars="horizontal"
+        android:layout_height="@dimen/height_50dp"/>
+</LinearLayout>

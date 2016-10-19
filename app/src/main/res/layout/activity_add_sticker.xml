@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_square"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_left_5dp"
+        android:paddingLeft="@dimen/padding_left_10dp"
+        android:paddingRight="@dimen/padding_left_10dp"
+        android:paddingTop="@dimen/padding_left_5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_video_gif_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/btn_video_gif_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_back_main" />
+
+        </LinearLayout>
+
+        <com.hiep.video.maker.ui.widget.EFStrokeTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/padding_left_10dp"
+            android:gravity="center"
+            android:text="Add STICKER"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/txt_lenght" />
+
+        <LinearLayout
+            android:id="@+id/ll_video_gif_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_done" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.hiep.video.maker.widget.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SurfaceView
+            android:id="@+id/sv_play_gif_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_play_gif_status"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/play_big"
+            android:visibility="visible" />
+
+    </com.hiep.video.maker.widget.SquareRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_square"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pb_preview_video_duration"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentRight="true"
+            android:max="999"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_gif_effect"
+                android:layout_width="match_parent"
+                android:text="Select gif"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/app_white"
+                android:textSize="14sp"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_gif_video"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_frame_effect"
+                android:layout_gravity="bottom"
+                android:scrollbars="horizontal"
+                android:layout_height="60dp"/>
+            <LinearLayout
+                android:id="@+id/ll_native_ads"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"></LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

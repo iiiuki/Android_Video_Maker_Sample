@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_gallery_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/collage_purple"
+        android:clickable="true"
+        android:drawableLeft="@drawable/gallery_back_arrow"
+        android:gravity="center_vertical"
+        android:padding="@dimen/gallery_main_layout_header_padding"
+        android:text="@string/gallery_select_an_album"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/gallery_main_layout_header_text_size"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.8"
+        android:columnWidth="@dimen/gllery_grid_item_layout_size"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.1"
+        android:background="#ffffffff"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5.0"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/selected_image_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/button_footer_count"
+            android:layout_width="@dimen/gallery_footer_count_button_width"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_gallery_ok_button_bg"
+            android:drawableBottom="@drawable/ic_done_white"
+            android:padding="@dimen/gallery_footer_count_button_padding"
+            android:text="0"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/gallery_footer_count_button_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_backfround"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_50"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_square"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gv_my_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:numColumns="3"
+        android:background="@color/app_tranparent"
+        android:layout_below="@+id/ll_actionbar"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:divider="@null"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/ll_native_ads"
+        android:layout_height="140dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_marge_video_select"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:overScrollMode="never" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp">
+            <Button
+                android:id="@+id/btn_marge_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/button_bg"
+                android:text="TIẾP THEO >"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_native_ads"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_square"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>

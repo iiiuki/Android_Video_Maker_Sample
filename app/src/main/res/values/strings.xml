@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">VideoMaker</string>
+
+    <string name="gallery_select_an_album">Select an Album</string>
+    <string name="gallery_no_more">Sorry, no more than %d photos!</string>
+    <string name="gallery_select_one">Please select at least 1 photo!</string>
+
+    <string name="ffmpeg_cmd_hint">Enter command here. To run \"ffmpeg -version\" enter \"-version\"</string>
+    <string name="device_not_supported">Device not supported</string>
+    <string name="device_not_supported_message">FFmpeg is not supported on your device</string>
+    <string name="run">Run</string>
+    <string name="empty_command_toast">You cannot execute empty command</string>
+
+    ///////////////////
+    <string name="my_video_title">My video</string>
+    <string name="my_video_preview_title">Preview video</string>
+
+
+    <string name="double_click_input_text">double click input text</string>
+    <string name="STR_BTN_BACK">Back</string>
+    <string name="STR_BTN_CAM">Camera</string>
+    <string name="STR_BTN_AlBUM">Album</string>
+    <string name="STR_BTN_FRAME">Frame</string>
+    <string name="STR_BTN_STICKER">Sticker</string>
+    <string name="STR_BTN_Text">Text</string>
+
+    <string name="color_palette">Color Palette</string>
+    <string name="colors">Colors</string>
+    <string name="font">Choice Fonts</string>
+
+    <string name="prompt">Prompt</string>
+    <string name="exit">Do you want exit?</string>
+    <string name="save">Do you want to save this photo?</string>
+    <string name="ok">OK</string>
+    <string name="no">NO</string>
+    <string name="cancel">CANCEL</string>
+    <string name="rate">RATE 5 STAR</string>
+    <string name="remind">Remind later</string>
+    <string name="never">Never</string>
+    <string name="app_file_path">Photo has been saved in: </string>
+
+    <string name="pingping_filter1">PP</string>
+    <string name="pingping_filter2">PP</string>
+    <string name="pingping_filter3">PP</string>
+    <string name="pingping_filter4">PP</string>
+    <string name="pingping_filter5">PP</string>
+    <string name="pingping_filter6">PP</string>
+    <string name="pingping_filter7">PP</string>
+    <string name="pingping_filter8">PP</string>
+    <string name="pingping_filter9">PP</string>
+    <string name="pingping_filter10">PP</string>
+    <string name="pingping_filter11">PP</string>
+    <string name="pingping_filter12">PP</string>
+    <string name="pingping_filter13">PP</string>
+    <string name="pingping_filter14">PP</string>
+    <string name="pingping_filter15">PP</string>
+    <string name="pingping_filter16">PP</string>
+    <string name="pingping_filter17">PP</string>
+    <string name="pingping_filter18">PP</string>
+
+
+    <string name="request_permission_camera">This app needs camera permission.</string>
+    <string name="request_permission_storage">This app needs storage permission.</string>
+</resources>
